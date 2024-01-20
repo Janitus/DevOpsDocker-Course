@@ -1,0 +1,26 @@
+docker run -p 8080:8080 example-backend
+docker run -p 5000:5000 example-frontend
+
+Exercise 1.14: Success! Great job!
+
+backend
+
+[GIN-debug] GET    /ping                     --> server/router.pingpong (4 handlers)
+[GIN-debug] GET    /messages                 --> server/controller.GetMessages (4 handlers)
+[GIN-debug] POST   /messages                 --> server/controller.CreateMessage (4 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2024/01/20 - 15:42:31 | 200 |          33µs |      172.17.0.1 | GET      "/ping"
+
+frontend
+
+ INFO  Accepting connections at http://localhost:5000
+ HTTP  1/20/2024 3:42:28 PM 172.17.0.1 GET /
+ HTTP  1/20/2024 3:42:28 PM 172.17.0.1 Returned 200 in 14 ms
+ HTTP  1/20/2024 3:42:29 PM 172.17.0.1 GET /static/css/main.9ee2e4df.chunk.css
+ HTTP  1/20/2024 3:42:29 PM 172.17.0.1 Returned 200 in 2 ms
+ HTTP  1/20/2024 3:42:29 PM 172.17.0.1 GET /static/js/2.43ca3586.chunk.js
+ HTTP  1/20/2024 3:42:29 PM 172.17.0.1 GET /static/js/main.bf4dc451.chunk.js
+ HTTP  1/20/2024 3:42:29 PM 172.17.0.1 Returned 200 in 2 ms
+ HTTP  1/20/2024 3:42:29 PM 172.17.0.1 Returned 200 in 4 ms
+ HTTP  1/20/2024 3:42:29 PM 172.17.0.1 GET /static/media/toskalogo.c0f35cf0.svg
+ HTTP  1/20/2024 3:42:29 PM 172.17.0.1 Returned 200 in 1 ms

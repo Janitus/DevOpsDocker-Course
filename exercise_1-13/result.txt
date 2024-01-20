@@ -1,0 +1,11 @@
+browser: pong
+
+command: docker run -p 8080:8080 example-backend
+
+cmd output:
+
+[GIN-debug] GET    /ping                     --> server/router.pingpong (4 handlers)
+[GIN-debug] GET    /messages                 --> server/controller.GetMessages (4 handlers)
+[GIN-debug] POST   /messages                 --> server/controller.CreateMessage (4 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2024/01/20 - 15:34:14 | 200 |      44.301µs |      172.17.0.1 | GET      "/ping"
