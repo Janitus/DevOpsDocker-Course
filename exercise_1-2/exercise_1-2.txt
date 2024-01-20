@@ -1,0 +1,14 @@
+docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+docker images
+REPOSITORY                          TAG       IMAGE ID       CREATED          SIZE
+curler                              latest    f78b02e3adb5   17 minutes ago   137MB
+ubuntu                              latest    e34e831650c1   8 days ago       77.9MB
+nginx                               latest    a8758716bb6a   2 months ago     187MB
+hainingt/big_data_platforms         latest    d6033a5a97ad   4 months ago     3.72GB
+docker/welcome-to-docker            latest    912b66cfd46e   7 months ago     13.4MB
+ubuntu                              18.04     f9a80a55f492   7 months ago     63.2MB
+hello-world                         latest    d2c94e258dcb   8 months ago     13.3kB
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   2 years ago      83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   2 years ago      15.7MB

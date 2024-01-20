@@ -1,0 +1,2 @@
+docker exec -it 2426622898f3 tail -f /usr/src/app/text.log
+Secret message: Secret message is: 'You can find the source code here: https://github.com/docker-hy'
