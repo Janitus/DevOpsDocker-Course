@@ -1,0 +1,27 @@
+D:\Jani\Opis\DevOpsWithDocker\DevOpsDocker-Course\exercise_1-5>docker images | findstr "devopsdockeruh/simple-web-service"
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   3 years ago     83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   3 years ago     15.7MB
+devopsdockeruh/simple-web-service   latest    99f995eeaa58   3 years ago     10.1MB
+
+
+
+Secret message:
+
+D:\Jani\Opis\DevOpsWithDocker\DevOpsDocker-Course\exercise_1-5>docker run -d --name alpine-web-service devopsdockeruh/simple-web-service:alpine
+6ab312dc09b8ea83e4cc0c94a56ca3ab04f3e00458e5ce4f4c17c68f32f7024b
+
+D:\Jani\Opis\DevOpsWithDocker\DevOpsDocker-Course\exercise_1-5>docker exec -it alpine-web-service sh
+/usr/src/app # find / -type f -name '*.log' 2>/dev/null
+/usr/src/app/text.log
+/usr/src/app # tail -f /usr/src/app/text.log
+2024-03-29 10:15:51 +0000 UTC
+2024-03-29 10:15:53 +0000 UTC
+2024-03-29 10:15:55 +0000 UTC
+2024-03-29 10:15:57 +0000 UTC
+2024-03-29 10:15:59 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-03-29 10:16:01 +0000 UTC
+2024-03-29 10:16:03 +0000 UTC
+2024-03-29 10:16:05 +0000 UTC
+2024-03-29 10:16:07 +0000 UTC
+2024-03-29 10:16:09 +0000 UTC
